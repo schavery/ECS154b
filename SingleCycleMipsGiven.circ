@@ -145,6 +145,7 @@ This file is intended to be loaded by Logisim (http://www.cburch.com/logisim/).
     <wire from="(300,90)" to="(350,90)"/>
     <wire from="(1270,310)" to="(1340,310)"/>
     <wire from="(590,720)" to="(610,720)"/>
+    <wire from="(1280,510)" to="(1340,510)"/>
     <wire from="(830,380)" to="(860,380)"/>
     <wire from="(310,660)" to="(330,660)"/>
     <wire from="(1270,280)" to="(1340,280)"/>
@@ -244,7 +245,6 @@ This file is intended to be loaded by Logisim (http://www.cburch.com/logisim/).
     <wire from="(230,550)" to="(250,550)"/>
     <wire from="(420,250)" to="(420,260)"/>
     <wire from="(310,650)" to="(310,660)"/>
-    <wire from="(1290,510)" to="(1340,510)"/>
     <wire from="(300,600)" to="(360,600)"/>
     <comp lib="0" loc="(610,320)" name="Tunnel">
       <a name="facing" val="east"/>
@@ -321,11 +321,6 @@ This file is intended to be loaded by Logisim (http://www.cburch.com/logisim/).
       <a name="facing" val="east"/>
       <a name="width" val="32"/>
       <a name="label" val="Z"/>
-    </comp>
-    <comp lib="0" loc="(1290,510)" name="Tunnel">
-      <a name="facing" val="east"/>
-      <a name="width" val="32"/>
-      <a name="label" val="MemData"/>
     </comp>
     <comp lib="0" loc="(650,620)" name="Tunnel">
       <a name="facing" val="east"/>
@@ -501,6 +496,11 @@ This file is intended to be loaded by Logisim (http://www.cburch.com/logisim/).
     <comp lib="0" loc="(1280,470)" name="Tunnel">
       <a name="facing" val="east"/>
       <a name="label" val="MemWr"/>
+    </comp>
+    <comp lib="0" loc="(1280,510)" name="Tunnel">
+      <a name="facing" val="east"/>
+      <a name="width" val="32"/>
+      <a name="label" val="B"/>
     </comp>
     <comp lib="0" loc="(250,550)" name="Tunnel">
       <a name="width" val="32"/>
