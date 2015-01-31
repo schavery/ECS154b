@@ -139,6 +139,7 @@ This file is intended to be loaded by Logisim (http://www.cburch.com/logisim/).
     <wire from="(300,680)" to="(370,680)"/>
     <wire from="(410,270)" to="(420,270)"/>
     <wire from="(830,570)" to="(850,570)"/>
+    <wire from="(1060,800)" to="(1080,800)"/>
     <wire from="(840,780)" to="(870,780)"/>
     <wire from="(430,190)" to="(540,190)"/>
     <wire from="(640,280)" to="(660,280)"/>
@@ -163,6 +164,8 @@ This file is intended to be loaded by Logisim (http://www.cburch.com/logisim/).
     <wire from="(430,130)" to="(530,130)"/>
     <wire from="(230,660)" to="(270,660)"/>
     <wire from="(430,70)" to="(490,70)"/>
+    <wire from="(1030,780)" to="(1080,780)"/>
+    <wire from="(1110,790)" to="(1130,790)"/>
     <wire from="(500,820)" to="(510,820)"/>
     <wire from="(430,230)" to="(500,230)"/>
     <wire from="(300,600)" to="(300,620)"/>
@@ -218,6 +221,7 @@ This file is intended to be loaded by Logisim (http://www.cburch.com/logisim/).
     <wire from="(150,660)" to="(170,660)"/>
     <wire from="(320,700)" to="(380,700)"/>
     <wire from="(180,550)" to="(200,550)"/>
+    <wire from="(1090,810)" to="(1090,840)"/>
     <wire from="(300,680)" to="(300,700)"/>
     <wire from="(1280,390)" to="(1340,390)"/>
     <wire from="(300,650)" to="(300,680)"/>
@@ -347,6 +351,10 @@ This file is intended to be loaded by Logisim (http://www.cburch.com/logisim/).
       <a name="facing" val="south"/>
       <a name="label" val="ALUSrc"/>
     </comp>
+    <comp lib="0" loc="(1090,840)" name="Tunnel">
+      <a name="facing" val="north"/>
+      <a name="label" val="Jr"/>
+    </comp>
     <comp lib="0" loc="(1340,390)" name="Probe">
       <a name="facing" val="west"/>
       <a name="radix" val="10unsigned"/>
@@ -355,6 +363,11 @@ This file is intended to be loaded by Logisim (http://www.cburch.com/logisim/).
     <comp lib="0" loc="(710,630)" name="Tunnel">
       <a name="width" val="32"/>
       <a name="label" val="Shifted"/>
+    </comp>
+    <comp lib="0" loc="(460,470)" name="Tunnel">
+      <a name="facing" val="north"/>
+      <a name="width" val="32"/>
+      <a name="label" val="toJumpMux"/>
     </comp>
     <comp lib="0" loc="(670,550)" name="Tunnel">
       <a name="width" val="32"/>
@@ -422,11 +435,6 @@ This file is intended to be loaded by Logisim (http://www.cburch.com/logisim/).
       <a name="width" val="32"/>
       <a name="label" val="ImmValue"/>
     </comp>
-    <comp lib="0" loc="(460,470)" name="Tunnel">
-      <a name="facing" val="north"/>
-      <a name="width" val="32"/>
-      <a name="label" val="toPC"/>
-    </comp>
     <comp lib="0" loc="(1280,510)" name="Tunnel">
       <a name="facing" val="east"/>
       <a name="width" val="32"/>
@@ -463,6 +471,11 @@ This file is intended to be loaded by Logisim (http://www.cburch.com/logisim/).
     <comp lib="0" loc="(1340,240)" name="Probe">
       <a name="facing" val="west"/>
       <a name="label" val="Jump"/>
+    </comp>
+    <comp lib="0" loc="(1060,800)" name="Tunnel">
+      <a name="facing" val="east"/>
+      <a name="width" val="32"/>
+      <a name="label" val="A"/>
     </comp>
     <comp lib="0" loc="(540,190)" name="Tunnel">
       <a name="label" val="MemRead"/>
@@ -517,6 +530,11 @@ This file is intended to be loaded by Logisim (http://www.cburch.com/logisim/).
     <comp lib="0" loc="(1280,350)" name="Tunnel">
       <a name="facing" val="east"/>
       <a name="label" val="RegWrite"/>
+    </comp>
+    <comp lib="0" loc="(1030,780)" name="Tunnel">
+      <a name="facing" val="east"/>
+      <a name="width" val="32"/>
+      <a name="label" val="toJRMux"/>
     </comp>
     <comp lib="0" loc="(250,550)" name="Tunnel">
       <a name="width" val="32"/>
@@ -605,7 +623,7 @@ This file is intended to be loaded by Logisim (http://www.cburch.com/logisim/).
     <comp lib="0" loc="(520,760)" name="Tunnel">
       <a name="facing" val="east"/>
       <a name="width" val="32"/>
-      <a name="label" val="toLastMux"/>
+      <a name="label" val="toJumpMux"/>
     </comp>
     <comp lib="0" loc="(1060,410)" name="Tunnel">
       <a name="facing" val="south"/>
@@ -675,6 +693,10 @@ This file is intended to be loaded by Logisim (http://www.cburch.com/logisim/).
     <comp lib="2" loc="(690,290)" name="Multiplexer">
       <a name="selloc" val="tr"/>
       <a name="width" val="5"/>
+      <a name="enable" val="false"/>
+    </comp>
+    <comp lib="2" loc="(1110,790)" name="Multiplexer">
+      <a name="width" val="32"/>
       <a name="enable" val="false"/>
     </comp>
     <comp lib="0" loc="(370,450)" name="Tunnel">
@@ -838,7 +860,7 @@ This file is intended to be loaded by Logisim (http://www.cburch.com/logisim/).
     </comp>
     <comp lib="0" loc="(630,810)" name="Tunnel">
       <a name="width" val="32"/>
-      <a name="label" val="toPC"/>
+      <a name="label" val="toJRMux"/>
     </comp>
     <comp lib="0" loc="(580,560)" name="Tunnel">
       <a name="facing" val="east"/>
@@ -967,6 +989,10 @@ This file is intended to be loaded by Logisim (http://www.cburch.com/logisim/).
     <comp lib="0" loc="(380,430)" name="Tunnel">
       <a name="facing" val="east"/>
       <a name="label" val="Branch"/>
+    </comp>
+    <comp lib="0" loc="(1130,790)" name="Tunnel">
+      <a name="width" val="32"/>
+      <a name="label" val="toPC"/>
     </comp>
     <comp lib="0" loc="(380,770)" name="Bit Extender">
       <a name="in_width" val="26"/>
