@@ -161,6 +161,7 @@ This file is intended to be loaded by Logisim (http://www.cburch.com/logisim/).
     <wire from="(670,260)" to="(710,260)"/>
     <wire from="(530,180)" to="(530,190)"/>
     <wire from="(510,160)" to="(520,160)"/>
+    <wire from="(840,550)" to="(840,560)"/>
     <wire from="(700,70)" to="(730,70)"/>
     <wire from="(560,550)" to="(590,550)"/>
     <wire from="(550,560)" to="(590,560)"/>
@@ -597,6 +598,10 @@ This file is intended to be loaded by Logisim (http://www.cburch.com/logisim/).
       <a name="label" val="ALUResult"/>
     </comp>
     <comp lib="0" loc="(280,670)" name="Tunnel">
+      <a name="facing" val="north"/>
+      <a name="label" val="Clock"/>
+    </comp>
+    <comp lib="0" loc="(840,560)" name="Tunnel">
       <a name="facing" val="north"/>
       <a name="label" val="Clock"/>
     </comp>
