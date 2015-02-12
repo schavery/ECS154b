@@ -74,7 +74,16 @@ def get_next_state(state, opcode, funct):
 			return states['write']
 
 	# select write back state
-	if state == states['']
+	# aluWB
+	if (state == states['shift'])   \
+                or (state == states['norm']):
+
+                return states['aluWB']
+
+        # immWB
+        if (state == states['imm']):
+                return states['immWB']
+
 
 
 
