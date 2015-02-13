@@ -1,0 +1,13 @@
+Steve Avery 997694781
+Scotty boy turner  998 551 881
+
+you'll love this one. We made a tasty python script to generate our ROM values
+cuz we didn't really optimize the rom at all
+
+so it uses 16 bits of address for 24 bits of control signals
+I think the data width is pretty set in stone but we could probably cut the
+number of addresses WAY way down.
+
+anyway we'll start testing now
+with love,
+us
