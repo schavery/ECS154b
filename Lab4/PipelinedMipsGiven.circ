@@ -3551,17 +3551,17 @@ This file is intended to be loaded by Logisim (http://www.cburch.com/logisim/).
     <a name="clabelup" val="east"/>
     <a name="clabelfont" val="SansSerif plain 12"/>
     <appear>
-      <path d="M66,203 Q70,213 74,203" fill="none" stroke="#808080" stroke-width="2"/>
+      <path d="M78,208 Q82,218 86,208" fill="none" stroke="#808080" stroke-width="2"/>
       <rect fill="none" height="210" stroke="#000000" stroke-width="2" width="40" x="50" y="50"/>
-      <path d="M63,171 Q67,181 71,171" fill="none" stroke="#808080" stroke-width="2"/>
-      <path d="M78,227 Q82,237 63,229" fill="none" stroke="#808080" stroke-width="2"/>
-      <path d="M61,217 Q65,227 69,217" fill="none" stroke="#808080" stroke-width="2"/>
-      <path d="M56,239 Q56,253 64,239" fill="none" stroke="#808080" stroke-width="2"/>
-      <path d="M71,242 Q75,252 79,242" fill="none" stroke="#808080" stroke-width="2"/>
-      <path d="M60,188 Q64,198 68,188" fill="none" stroke="#808080" stroke-width="2"/>
-      <path d="M69,144 Q73,154 77,144" fill="none" stroke="#808080" stroke-width="2"/>
-      <path d="M61,153 Q65,163 69,153" fill="none" stroke="#808080" stroke-width="2"/>
-      <path d="M63,116 Q67,126 71,116" fill="none" stroke="#808080" stroke-width="2"/>
+      <path d="M82,51 Q86,61 90,51" fill="none" stroke="#808080" stroke-width="2"/>
+      <path d="M76,229 Q80,239 61,231" fill="none" stroke="#808080" stroke-width="2"/>
+      <path d="M54,206 Q58,216 62,206" fill="none" stroke="#808080" stroke-width="2"/>
+      <path d="M79,248 Q79,262 87,248" fill="none" stroke="#808080" stroke-width="2"/>
+      <path d="M53,250 Q57,260 61,250" fill="none" stroke="#808080" stroke-width="2"/>
+      <path d="M66,52 Q70,62 74,52" fill="none" stroke="#808080" stroke-width="2"/>
+      <path d="M52,52 Q56,62 60,52" fill="none" stroke="#808080" stroke-width="2"/>
+      <path d="M74,52 Q78,62 82,52" fill="none" stroke="#808080" stroke-width="2"/>
+      <path d="M63,52 Q67,62 71,52" fill="none" stroke="#808080" stroke-width="2"/>
       <circ-port height="8" pin="240,60" width="8" x="46" y="66"/>
       <circ-port height="8" pin="240,120" width="8" x="46" y="86"/>
       <circ-port height="8" pin="210,190" width="8" x="46" y="106"/>
@@ -3583,7 +3583,7 @@ This file is intended to be loaded by Logisim (http://www.cburch.com/logisim/).
       <circ-port height="10" pin="420,660" width="10" x="85" y="205"/>
       <circ-port height="10" pin="420,740" width="10" x="85" y="225"/>
       <circ-port height="8" pin="240,910" width="8" x="46" y="246"/>
-      <circ-port height="8" pin="420,910" width="8" x="86" y="246"/>
+      <circ-port height="10" pin="420,910" width="10" x="85" y="245"/>
       <circ-anchor facing="east" height="6" width="6" x="87" y="57"/>
     </appear>
     <wire from="(300,210)" to="(300,220)"/>
@@ -3665,6 +3665,7 @@ This file is intended to be loaded by Logisim (http://www.cburch.com/logisim/).
     </comp>
     <comp lib="0" loc="(420,910)" name="Pin">
       <a name="facing" val="west"/>
+      <a name="output" val="true"/>
       <a name="width" val="5"/>
       <a name="tristate" val="false"/>
       <a name="label" val="Shamt"/>
@@ -4651,7 +4652,7 @@ This file is intended to be loaded by Logisim (http://www.cburch.com/logisim/).
 5428 28 6428 5*28 8 23*28 2028 28
 28 28 1028 3028 4*28 4028 85*28 64*8
 64*30 64*108 192*28 64*2a28 64*28 64*4a28 64*28 64*1a28
-64*3a28 1344*28 64*60 448*28 64*88 1279*28
+64*3a28 1344*28 64*2a60 448*28 64*2888 1279*28
 </a>
     </comp>
     <comp lib="0" loc="(560,370)" name="Pin">

@@ -102,6 +102,12 @@ def get_alu_opcode(opcode, funct):
 	if opcode == opcodes['SLTI']:
 		return aluops['slt']
 
+	if opcode == opcodes['SW']:
+		return aluops['add']
+
+	if opcode == opcodes['LW']:
+		return aluops['add']
+
 	# default return
 	return aluops['sub']
 
@@ -109,14 +115,11 @@ def get_alu_opcode(opcode, funct):
 
 
 def get_reg_dst(opcode):
-	if opcode == opcodes['ALU']:
-		# r-type; d = s OP t
-		return '0'
-
 	if opcode == opcodes['ADDI']     \
 		or opcode == opcodes['ANDI'] \
 		or opcode == opcodes['ORI']  \
-		or opcode == opcodes['SLTI']:
+		or opcode == opcodes['SLTI'] \
+		or opcode == opcodes['LW']:
 		# i-type t = s OP iiiiii
 		return '1'
 
@@ -142,7 +145,9 @@ def get_alu_src_b(opcode):
 	if opcode == opcodes['ADDI']     \
 		or opcode == opcodes['ANDI'] \
 		or opcode == opcodes['ORI']  \
-		or opcode == opcodes['SLTI']:
+		or opcode == opcodes['SLTI'] \
+		or opcode == opcodes['SW']   \
+		or opcode == opcodes['LW']:
 		# use the immediate value
 		return '1'
 
